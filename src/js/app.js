@@ -1,3 +1,4 @@
+
 export default class Game {
 	static FIELD_SIZE = 16;
 	static MAX_MISSES = 5;
