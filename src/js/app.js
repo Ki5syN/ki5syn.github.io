@@ -1,6 +1,6 @@
 
-import goblin from './img/goblin.png'
-import icons from './img/icons.png'
+import goblin from '../image/goblin.png'
+import icons from '../image/icons.png'
 
 export default class Game {
 	static FIELD_SIZE = 16;
