@@ -1,4 +1,7 @@
 
+import goblin from './img/goblin.png'
+import icons from './img/icons.png'
+
 export default class Game {
 	static FIELD_SIZE = 16;
 	static MAX_MISSES = 5;
@@ -14,7 +17,7 @@ export default class Game {
 		this.isGameOver = false;
 
 		this.element = document.createElement('img')
-		this.element.src ='./image/goblin.png';
+		this.element.src = goblin;
 
 		this.mouseEnterHandler = this.mouseEnter.bind(this);
 		this.onClick = this.click.bind(this);
@@ -30,7 +33,7 @@ export default class Game {
 	}
 
 	mouseEnter() {
-		document.body.style.cursor =  "url('./image/icons.png'), pointer";
+		document.body.style.cursor = `url(${icons}), pointer`;
 
 		setTimeout(() => {
 			document.body.style.cursor = 'default';
